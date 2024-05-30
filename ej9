@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+int main()
+{
+  char primer, segun, tercer;
+  printf ("Ingrese la primer letra: \n");
+  scanf ("%c",&primer);
+  fflush(stdin);
+  printf ("Ingrese la segunda letra: \n");
+  scanf ("%c",&segun);
+  fflush(stdin);
+  printf ("\ningrese la tercer letra: \n");
+  scanf ("%c",&tercer);
+fflush(stdin);
+  if (primer>segun && primer>tercer && segun>tercer)
+  {
+     printf ("El orden ascendente es:%c %c %c",primer,segun,tercer);
+
+  } else if (segun>primer && segun>tercer && primer>tercer)
+    {
+        printf ("El orden ascendente es:%c %c %c",segun,primer,tercer);
+
+    } else if (tercer>primer && tercer>segun && primer>segun)
+
+       {
+           printf ("El orden ascendente es:%c %c %c",tercer,primer,segun);
+       } else
+            printf("El orden ascendente es:%c %c %c",tercer,segun,primer);
+
+
+
+
+return 0;
+
+}
+
